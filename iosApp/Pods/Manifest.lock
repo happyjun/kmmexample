@@ -1,0 +1,23 @@
+PODS:
+  - Protobuf (4.0.1)
+  - shared (1.0):
+    - Protobuf
+
+DEPENDENCIES:
+  - shared (from `../shared`)
+
+SPEC REPOS:
+  https://git.woa.com/TencentVideoShared/VideoBase.git:
+    - Protobuf
+
+EXTERNAL SOURCES:
+  shared:
+    :path: "../shared"
+
+SPEC CHECKSUMS:
+  Protobuf: ab2a4d4f9d97348e1f63d4419df1b811cea32b8f
+  shared: 899540c563ebd5469ea0844e4dd40cb47af957d3
+
+PODFILE CHECKSUM: b7fc3b431edea61aa1d467215cdba8204ae40e9e
+
+COCOAPODS: 1.11.3

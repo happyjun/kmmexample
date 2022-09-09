@@ -1,0 +1,7 @@
+source "https://git.woa.com/TencentVideoShared/VideoBase.git"
+source "https://mirrors.tencent.com/repository/generic/pod-go/T-CocoaPods/Specs/"
+target 'iosApp' do
+  use_frameworks!
+  platform :ios, '14.1'
+  pod 'shared', :path => '../shared'
+end
