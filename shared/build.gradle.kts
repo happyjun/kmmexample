@@ -30,11 +30,11 @@ kotlin {
                 "            'GCC_PREPROCESSOR_DEFINITIONS' => '\$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1',\n" +
                 "        }"
         extraSpecAttributes["user_target_xcconfig"] = """{
-            'GCC_PREPROCESSOR_DEFINITIONS' => 'GPB_USE_PROTOBUF_FRAMEWORK=1'
+            'GCC_PREPROCESSOR_DEFINITIONS' => 'GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1'
         }""".trimIndent()
 
         pod("Protobuf"){
-            extraOpts += listOf("-compiler-option", "GPB_USE_PROTOBUF_FRAMEWORK=1")
+            extraOpts += listOf("-compiler-option", "GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1")
         }
     }
     
